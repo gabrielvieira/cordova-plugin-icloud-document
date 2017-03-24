@@ -7,15 +7,22 @@
     <keywords>cordova,iCloud,Document</keywords>
 
     <js-module src="www/iCloudDocument.js" name="iCloudDocument">
-        <clobbers target="device" />
+        <clobbers target="iCloudDocument" />
     </js-module>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="iCloud Document">
+            <feature name="iCLoudDocument">
                 <param name="ios-package" value="CDViCloudDocument"/>
             </feature>
         </config-file>
+
+        <header-file src="src/ios/iCloudDocument.h" />
+        <source-file src="src/ios/iCloudDocument.m" />
+
+        <header-file src="src/ios/iCloud.h" />
+        <source-file src="src/ios/iCloud.m" />
+
         <header-file src="src/ios/CDViCloudDocument.h" />
         <source-file src="src/ios/CDViCloudDocument.m" />
     </platform>

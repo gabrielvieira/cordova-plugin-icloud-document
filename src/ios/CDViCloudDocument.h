@@ -4,18 +4,21 @@
 
 @interface CDViCloudDocument : CDVPlugin
 {
-    double x;
-    double y;
-    double z;
-    NSTimeInterval timestamp;
+
 }
 
-@property (readonly, assign) BOOL isRunning;
-@property (nonatomic, strong) NSString* callbackId;
-
-- (CDViCloudDocument*)init;
-
-- (void)start:(CDVInvokedUrlCommand*)command;
-- (void)stop:(CDVInvokedUrlCommand*)command;
+- (void)test:(CDVInvokedUrlCommand*)command;
+- (void)setContainer:(CDVInvokedUrlCommand*)command;
+- (void)checkFile:(CDVInvokedUrlCommand*)command;
+- (void)uploadFile:(CDVInvokedUrlCommand*)command;
+- (void)retriveFile:(CDVInvokedUrlCommand*)command;
+- (void)listDocuments:(CDVInvokedUrlCommand*)command;
+// @property (readonly, assign) BOOL isRunning;
+// @property (nonatomic, strong) NSString* callbackId;
+//
+// - (CDViCloudDocument*)init;
+//
+// - (void)start:(CDVInvokedUrlCommand*)command;
+// - (void)stop:(CDVInvokedUrlCommand*)command;
 
 @end
