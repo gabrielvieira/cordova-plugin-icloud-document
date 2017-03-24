@@ -99,7 +99,7 @@
 
 }
 
-- (void)retriveFile:(CDVInvokedUrlCommand*)command{
+- (void)retrieveFile:(CDVInvokedUrlCommand*)command{
 
   CDVPluginResult* pluginResult = nil;
   NSString* fileName = [command.arguments objectAtIndex:0];

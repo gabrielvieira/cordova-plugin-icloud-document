@@ -24,7 +24,8 @@ module.exports = {
     },
 
     retrieveFile: function (fileName, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "iCLoudDocument", "retrieveFile", []);
+        var args = fileName
+        cordova.exec(successCallback, errorCallback, "iCLoudDocument", "retrieveFile", [args]);
     }
 };
 
