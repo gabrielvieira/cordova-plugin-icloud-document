@@ -16,7 +16,7 @@
     "cordova",
     "document",
     "icloud",
-    "cordova-ios",
+    "cordova-ios"
   ],
   "author": "Gabriel Vieira Figueiredo Tomaz",
   "license": "GPL",
